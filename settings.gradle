@@ -1,0 +1,8 @@
+rootProject.name = 'FirmaTransport'
+include 'Model'
+include 'Repositories'
+include 'Services'
+include 'Server'
+include 'Networking'
+include 'Client'
+

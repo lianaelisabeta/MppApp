@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Client.iml" filepath="$PROJECT_DIR$/.idea/modules/Client.iml" group="Client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Client/Client_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Client/Client_main.iml" group="Client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Client/Client_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Client/Client_test.iml" group="Client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirmaTransport.iml" filepath="$PROJECT_DIR$/.idea/modules/FirmaTransport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirmaTransport_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FirmaTransport_main.iml" group="FirmaTransport" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirmaTransport_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FirmaTransport_test.iml" group="FirmaTransport" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Model.iml" filepath="$PROJECT_DIR$/.idea/modules/Model.iml" group="Model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Model/Model_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Model/Model_main.iml" group="Model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Model/Model_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Model/Model_test.iml" group="Model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Networking.iml" filepath="$PROJECT_DIR$/.idea/modules/Networking.iml" group="Networking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Networking/Networking_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Networking/Networking_main.iml" group="Networking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Networking/Networking_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Networking/Networking_test.iml" group="Networking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Repositories.iml" filepath="$PROJECT_DIR$/.idea/modules/Repositories.iml" group="Repositories" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Repositories/Repositories_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Repositories/Repositories_main.iml" group="Repositories" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Repositories/Repositories_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Repositories/Repositories_test.iml" group="Repositories" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Server.iml" filepath="$PROJECT_DIR$/.idea/modules/Server.iml" group="Server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Server/Server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Server/Server_main.iml" group="Server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Server/Server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Server/Server_test.iml" group="Server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Services.iml" filepath="$PROJECT_DIR$/.idea/modules/Services.iml" group="Services" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Services/Services_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Services/Services_main.iml" group="Services" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Services/Services_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Services/Services_test.iml" group="Services" />
+    </modules>
+  </component>
+</project>

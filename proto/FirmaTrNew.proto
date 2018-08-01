@@ -1,0 +1,89 @@
+syntax="proto3";
+option java_outer_classname = "FirmaTrProtobufs2";
+
+
+message User{
+    string UserId=1;
+    string Name=2;
+    string Password=3;
+}
+
+message Date{
+    int32 day=1;
+    int32 month=2;
+    int32 year=3;
+}
+
+message Time{
+    int32 hour=1;
+    int32 minute=2;
+}
+
+message CursaDTO{
+    string loc=1;
+    string jud=2;
+    string tar=3;
+    Date date=4;
+    Time time=5;
+
+}
+
+message Cursa{
+    int32 CursaId=1;
+    int32 DestinatieId=2;
+    Date Data=3;
+    Time Ora=4;
+    int32 NrLocuri=5;
+}
+
+message Destinatie{
+    int32 DestinatieId=1;
+    string Localitate=2;
+    string Judet=3;
+    string Tara=4;
+}
+
+
+message CursaDestinatie{
+    Cursa cursa=1;
+    Destinatie destinatie=2;
+}
+
+message Rezervare{
+    int32 RezervareId=1;
+    int32 CursaId=2;
+    string NumeClient=3;
+    int32 NrLocuriRezervate=4;
+}
+
+message Loc{
+    int32 LocId=1;
+    int32 NrLoc=2;
+    string NumeClient=3;
+    int32 CursaId=4;
+}
+message Request{
+    enum Type { Login=0; Logout=1; GetCurse=2;GetLocuri=3;AddRezervare=4;GetUser=5;GetCursa=6;}
+
+    Type type = 1;
+    string username=2;
+    User user=3;
+    Rezervare rez=4;
+    repeated CursaDestinatie curse=5;
+    CursaDTO cursadto=6;
+    Cursa cursa=7;}
+
+message Response{
+    enum Type{ Ok=0; Error=1; GetCurse=2;AddedRezervare=3;GetLocuri=4;Updated=5;GetCursa=6;GetUser=7;}
+    Type type = 1;
+    string error=2;
+    User user=3;
+    string ok=4;
+    repeated CursaDestinatie curse=5;
+    Cursa cursa=6;
+    repeated Loc locuri=7;
+
+
+}
+
+

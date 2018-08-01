@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="firmadetransport.db">
+  <database-model serializer="dbm" rdbms="SQLITE" format-version="4.7">
+    <root id="1"/>
+    <schema id="2" parent="1" name="main">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <collation id="3" parent="1" name="BINARY"/>
+    <collation id="4" parent="1" name="NOCASE"/>
+    <collation id="5" parent="1" name="RTRIM"/>
+    <table id="6" parent="2" name="Cursa"/>
+    <table id="7" parent="2" name="Destinatie"/>
+    <table id="8" parent="2" name="Loc"/>
+    <table id="9" parent="2" name="Rezervare"/>
+    <table id="10" parent="2" name="User"/>
+    <table id="11" parent="2" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <column id="12" parent="6" name="CursaId">
+      <Position>1</Position>
+      <DataType>INTEGER|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="13" parent="6" name="DestinatieId">
+      <Position>2</Position>
+      <DataType>INTEGER|0</DataType>
+    </column>
+    <column id="14" parent="6" name="Data">
+      <Position>3</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="15" parent="6" name="NrLocuri">
+      <Position>4</Position>
+      <DataType>INTEGER|0</DataType>
+      <DefaultExpression>18</DefaultExpression>
+    </column>
+    <key id="16" parent="6">
+      <ColNames>CursaId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="17" parent="6">
+      <ColNames>DestinatieId</ColNames>
+      <RefTableName>Destinatie</RefTableName>
+      <RefColNames>DestinatieId</RefColNames>
+    </foreign-key>
+    <column id="18" parent="7" name="DestinatieId">
+      <Position>1</Position>
+      <DataType>INTEGER|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="7" name="Localitate">
+      <Position>2</Position>
+      <DataType>VARCHAR(30)|0</DataType>
+    </column>
+    <column id="20" parent="7" name="Judet">
+      <Position>3</Position>
+      <DataType>VARCHAR(30)|0</DataType>
+    </column>
+    <column id="21" parent="7" name="Tara">
+      <Position>4</Position>
+      <DataType>VARCHAR(30)|0</DataType>
+    </column>
+    <key id="22" parent="7">
+      <ColNames>DestinatieId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="23" parent="8" name="LocId">
+      <Position>1</Position>
+      <DataType>INTEGER|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="8" name="NrLoc">
+      <Position>2</Position>
+      <DataType>INTEGER|0</DataType>
+    </column>
+    <column id="25" parent="8" name="NumeClient">
+      <Position>3</Position>
+      <DataType>VARCHAR(30)|0</DataType>
+    </column>
+    <column id="26" parent="8" name="CursaId">
+      <Position>4</Position>
+      <DataType>INTEGER|0</DataType>
+    </column>
+    <key id="27" parent="8">
+      <ColNames>LocId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="28" parent="8">
+      <ColNames>CursaId</ColNames>
+      <RefTableName>Cursa</RefTableName>
+      <RefColNames>CursaId</RefColNames>
+    </foreign-key>
+    <column id="29" parent="9" name="RezervareId">
+      <Position>1</Position>
+      <DataType>INTEGER|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="9" name="CursaId">
+      <Position>2</Position>
+      <DataType>INTEGER|0</DataType>
+    </column>
+    <column id="31" parent="9" name="NumeClient">
+      <Position>3</Position>
+      <DataType>VARCHAR(30)|0</DataType>
+    </column>
+    <column id="32" parent="9" name="NrLocuriRezervate">
+      <Position>4</Position>
+      <DataType>INTEGER|0</DataType>
+    </column>
+    <key id="33" parent="9">
+      <ColNames>RezervareId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="34" parent="9">
+      <ColNames>CursaId</ColNames>
+      <RefTableName>Cursa</RefTableName>
+      <RefColNames>CursaId</RefColNames>
+    </foreign-key>
+    <column id="35" parent="10" name="UserId">
+      <Position>1</Position>
+      <DataType>VARCHAR(30)|0</DataType>
+    </column>
+    <column id="36" parent="10" name="Name">
+      <Position>2</Position>
+      <DataType>VARCHAR(30)|0</DataType>
+    </column>
+    <column id="37" parent="10" name="Password">
+      <Position>3</Position>
+      <DataType>VARCHAR(30)|0</DataType>
+    </column>
+    <index id="38" parent="10" name="sqlite_autoindex_User_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UserId</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="39" parent="10">
+      <ColNames>UserId</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_User_1</UnderlyingIndexName>
+    </key>
+    <column id="40" parent="11" name="type">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="41" parent="11" name="name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="42" parent="11" name="tbl_name">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="43" parent="11" name="rootpage">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+    </column>
+    <column id="44" parent="11" name="sql">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+    </column>
+  </database-model>
+</dataSource>

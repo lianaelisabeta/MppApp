@@ -1,0 +1,55 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "models.User" table = "User">
+
+        <meta attribute = "class-description">
+            This class contains the user detail.
+        </meta>
+
+        <id name = "Id" type = "string" column = "UserId">
+            <generator class="native"/>
+        </id>
+
+        <property name = "Name" column = "Name" type = "string"/>
+        <property name = "Password" column = "Password" type = "string"/>
+
+
+    </class>
+    <class name = "models.Destinatie" table = "Destinatie">
+
+        <meta attribute = "class-description">
+            This class contains the user detail.
+        </meta>
+
+        <id name = "Id" type = "integer" column = "DestinatieId">
+            <generator class="increment"/>
+        </id>
+
+
+        <property name = "Localitate" column = "Localitate" type = "string"/>
+        <property name = "Judet" column = "Judet" type = "string"/>
+        <property name = "Tara" column = "Tara" type = "string"/>
+
+
+
+    </class>
+    <class name="models.Loc" table="Loc">
+        <meta attribute = "class-description">
+            This class contains the user detail.
+        </meta>
+        <id name="Id" type="integer" column="LocId">
+            <generator class="native"/>
+        </id>
+        <property name = "Nrloc" column = "NrLoc" type = "integer"/>
+        <property name="Numeclient" column="NumeClient" type="string"/>
+       <property name="Cursaid" column="CursaId" type="integer"/>
+
+
+    </class>
+
+
+</hibernate-mapping>
